@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7° Atividade</title>
+</head>
+<body>
+    <script>
+        var x;
+        var y;
+        var z;
+
+        x=prompt("Digite um número: ");
+        x=parseFloat(x);
+
+        y=prompt("Digite o segundo número: ");
+        y=parseFloat(y);
+
+        z=prompt("Digite o terceiro número: ");
+        z=parseFloat(z);
+
+        if(x < y && x < z){
+            alert(+x + "é menor" );
+
+            if( y< x && y < z ){
+                alert (+y + "é menor");
+            }
+        }
+        else{
+            alert(+z + "é menor");
+        }
+
+    </script>
+</body>
+</html>
