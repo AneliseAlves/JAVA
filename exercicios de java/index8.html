@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8° Atividade</title>
+</head>
+<body>
+    <script>
+        var x;
+        var y;
+        var z;
+
+        x=prompt("Digite um número: ");
+        x=parseFloat(x);
+
+        y=prompt("Digite o segundo número: ");
+        y=parseFloat(y);
+
+        z=prompt("Digite o terceiro número: ");
+        z=parseFloat(z);
+
+        if(x <= y && x <= z){
+            if(y <= z){
+                alert(y + ", " + x + ", " + z);
+            }
+            else{
+                alert(x + "," +z + "," + y);
+            }
+        }
+        else if (y <= x && y <= z) {
+            if (x <= z) {
+                alert(y + ", " + x + ", " + z);
+            } 
+            else {
+                alert(y + ", " + z + ", " + x);
+            }
+        } 
+        else {
+            if (x <= y) {
+                alert(z + ", " + x + ", " + y);
+            } 
+            else {
+                alert(z + ", " + y + ", " + x);
+            }
+        }
+    </script>
+</body>
+</html>
